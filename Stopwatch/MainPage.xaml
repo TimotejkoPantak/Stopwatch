@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             x:Class="StopWatch.MainPage"
+             BackgroundColor="Black">
+
+
+    <StackLayout>
+        <Label
+        x:Name="Stopwatch"
+            Text="0:00:00"
+            FontSize="50"
+            HorizontalOptions="CenterAndExpand"
+            VerticalOptions="Center" 
+            TextColor="White"/>
+
+        <Button
+            Text="Start"
+            Clicked="Button_Clicked"
+            HeightRequest="100"
+            HorizontalOptions="Center"
+            Margin="20"
+            FontSize="30"
+            WidthRequest="200"
+            FontAttributes="Bold"
+            TextColor="White"
+            BackgroundColor="Black"/>
+
+        <Button
+            x:Name="btnStop"
+            Text="Stop"
+            Clicked="Button_Clicked_1"
+            Margin="20"
+            HeightRequest="100"
+            HorizontalOptions="Center"
+            FontSize="30"
+            WidthRequest="200"
+            FontAttributes="Bold"
+            TextColor="White"
+            BackgroundColor="Black"/>
+        <Button
+            x:Name="btnReset"
+            Text="Reset"
+            Clicked="btnReset_Clicked"
+            Margin="20"
+            HeightRequest="100"
+            HorizontalOptions="Center"
+            FontSize="30"
+            WidthRequest="200"
+            FontAttributes="Bold"
+            TextColor="White"
+            BackgroundColor="Black"/>
+
+
+    </StackLayout>
+
+</ContentPage>
